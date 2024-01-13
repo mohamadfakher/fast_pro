@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shop with Flask</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            width: 200px; /* Passe die Breite nach Bedarf an */
+            height: 200px; /* Passe die Höhe nach Bedarf an */
+            object-fit: cover; /* Behalte das Seitenverhältnis bei und decke den Bereich ab */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Flask</a>
+    <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Suche" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('general_bp.home')}}">Startseite</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Angebote</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Bestseller</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kundendienst</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('auth_blueprint.login')}}">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Willkommen bei Flask</h1>
+        <p class="lead">Entdecken Sie die besten Angebote für Millionen von Produkten.</p>
+    </div>
+
+    <div class="row">
+        <!-- Hier könnten Produkte angezeigt werden -->
+        <!-- Beispiel in home.html -->
+        <div class="row">
+            {% for product in products %}
+            <div class="col-md-6 mb4"> <!-- Eine neue Spalte für jedes Produkt -->
+                <div class="card" style="width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="/products/static/images/{{ product.image_path }}" alt="{{ product.name }} Image" class="card-img" style="object-fit: cover; height: 100%;">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.name }}</h5>
+                                <p class="card-text">{{ product.description }}</p>
+                                <p class="card-text">{{ product.price }}</p>
+                                <a href="{{url_for('view_bp.product_detail', product_id=product.id)}}" class="btn btn-primary">Details anzeigen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

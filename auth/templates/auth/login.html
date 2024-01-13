@@ -1,0 +1,78 @@
+<!-- auth/login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<h2>Login</h2>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<ul class="flashes">
+    {% for category, message in messages %}
+    <li class="{{ category }}">{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+
+<style>
+    .form-group {
+        display: grid;
+        grid-template-columns: 7% 1fr;
+        grid-gap: 10px;
+    }
+
+    .form-group label {
+        text-align: left;
+        padding-right: 10px;
+    }
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group input[type="checkbox"]{
+    width: 200px;
+    height: 15px;
+    }
+    .form-group input[type="checkbox"] {
+        align-self: flex-end;
+    }
+</style>
+
+<form method="POST" action="{{ url_for('auth_blueprint.login') }}">
+    {{ form.hidden_tag() }}
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        {% if form.email.errors %}
+        <p class="error">{{ form.email.errors[0] }}</p>
+        {% endif %}
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        {% if form.password.errors %}
+        <p class="error">{{ form.password.errors[0] }}</p>
+        {% endif %}
+    </div>
+
+    <div class="form-group">
+        <label for="remember">Remember me:</label>
+        <input type="checkbox" id="remember" name="remember">
+    </div>
+
+    <div class="form-group">
+        <button type="submit">Login</button>
+    </div>
+    <div>
+        <p>No acount? <a href="{{ url_for('auth_blueprint.signup') }}">Sign up here</a>.</p>
+    </div>
+</form>
+
+</body>
+</html>
