@@ -1,0 +1,9 @@
+fastapi==0.109.0
+tortoise-orm==0.20.0
+passlib==1.7.4
+api==0.0.7
+router==0.1
+uvicorn==0.25.0
+python-jose==3.3.0
+WTForms==3.1.2
+pytest==7.4.4
