@@ -21,7 +21,7 @@ oath2_scheme = OAuth2PasswordBearer(tokenUrl='token')
 
 
 # Geschützte Endpunkte
-protected_endpoints = {"/profile", "/login", "/signup"}
+protected_endpoints = {"/profile", "/login"}
 
 # Middleware registrieren
 app.add_middleware(RequestLoggerMiddleware)

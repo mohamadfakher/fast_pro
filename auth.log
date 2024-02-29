@@ -145,3 +145,22 @@
 2024-02-29 20:04:44.148 | INFO     | app:<module>:32 - This log message uses the configured logger.
 2024-02-29 20:04:47.351 | INFO     | app:read_user_profile:93 - route profile.
 2024-02-29 20:04:47.361 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /profile | Execution time: 0.01538s
+2024-02-29 20:12:44.373 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 20:12:45.703 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /docs | Execution time: 0.00702s
+2024-02-29 20:12:46.724 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /openapi.json | Execution time: 0.05636s
+2024-02-29 20:12:51.698 | INFO     | app:generate_token:36 - route token
+2024-02-29 20:12:51.700 | INFO     | utils.auth:token_generator:46 - Token is generated.
+2024-02-29 20:12:53.831 | INFO     | utils.auth:authenticate_user:39 - Successful
+2024-02-29 20:12:53.838 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 2.14772s
+2024-02-29 20:13:12.118 | INFO     | app:user_login:80 - route login
+2024-02-29 20:13:12.126 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01483s
+2024-02-29 20:13:45.007 | INFO     | app:read_user_profile:93 - route profile.
+2024-02-29 20:13:45.015 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /profile | Execution time: 0.01317s
+2024-02-29 20:20:58.750 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 20:21:06.820 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /docs | Execution time: 0.00664s
+2024-02-29 20:21:07.916 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /openapi.json | Execution time: 0.06667s
+2024-02-29 20:24:22.970 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /docs | Execution time: 0.00436s
+2024-02-29 20:24:24.012 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /openapi.json | Execution time: 0.00483s
+2024-02-29 20:30:56.927 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 20:30:57.624 | INFO     | app:signup:97 - route signup.
+2024-02-29 20:30:59.897 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /signup | Execution time: 2.27886s
