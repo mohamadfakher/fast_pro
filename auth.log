@@ -1,0 +1,147 @@
+2024-02-29 19:33:00.799 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:34:53.307 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:35:09.459 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:35:09.470 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:35:09.473 | INFO     | utils.auth:authenticate_user:42 - User ID: 2
+2024-02-29 19:35:09.476 | INFO     | utils.auth:authenticate_user:43 - Username: test
+2024-02-29 19:35:09.478 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$ed7D/M0gjo0jpKd88yxWjuvxtOPlCc.yNwOd7r3LmffyOfrAOPuZu
+2024-02-29 19:35:09.481 | INFO     | utils.auth:authenticate_user:45 - passwordddd: test
+2024-02-29 19:35:09.492 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:35:09.496 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer test.
+2024-02-29 19:35:33.887 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:35:33.893 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:35:33.895 | INFO     | utils.auth:authenticate_user:42 - User ID: 2
+2024-02-29 19:35:33.897 | INFO     | utils.auth:authenticate_user:43 - Username: test
+2024-02-29 19:35:33.899 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$ed7D/M0gjo0jpKd88yxWjuvxtOPlCc.yNwOd7r3LmffyOfrAOPuZu
+2024-02-29 19:35:33.901 | INFO     | utils.auth:authenticate_user:45 - passwordddd: test
+2024-02-29 19:35:33.904 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:35:33.907 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer test.
+2024-02-29 19:35:48.738 | INFO     | app:user_login:79 - Benutzer '{user.username}' hat sich angemeldet.
+2024-02-29 19:36:29.450 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:36:29.456 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:36:29.459 | INFO     | utils.auth:authenticate_user:42 - User ID: 5
+2024-02-29 19:36:29.461 | INFO     | utils.auth:authenticate_user:43 - Username: mohamad
+2024-02-29 19:36:29.463 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$wX7WjuPL38pj3ZQ8yfYPTu76YCIgqCX04ZD4NC8MuQ4Km52qiaMWO
+2024-02-29 19:36:29.465 | INFO     | utils.auth:authenticate_user:45 - passwordddd: mohamad
+2024-02-29 19:36:29.468 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:36:29.471 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer mohamad.
+2024-02-29 19:36:48.238 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:36:48.245 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:36:48.248 | INFO     | utils.auth:authenticate_user:42 - User ID: 5
+2024-02-29 19:36:48.251 | INFO     | utils.auth:authenticate_user:43 - Username: mohamad
+2024-02-29 19:36:48.254 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$wX7WjuPL38pj3ZQ8yfYPTu76YCIgqCX04ZD4NC8MuQ4Km52qiaMWO
+2024-02-29 19:36:48.256 | INFO     | utils.auth:authenticate_user:45 - passwordddd: mohamad
+2024-02-29 19:36:48.259 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:36:48.262 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer mohamad.
+2024-02-29 19:37:08.977 | INFO     | app:user_login:79 - Benutzer '{user.username}' hat sich angemeldet.
+2024-02-29 19:38:10.791 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:39:32.135 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:40:21.659 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:40:23.640 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /docs | Execution time: 0.00640s
+2024-02-29 19:40:24.845 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /openapi.json | Execution time: 0.05432s
+2024-02-29 19:40:48.316 | INFO     | app:generate_token:36 - route token
+2024-02-29 19:40:48.319 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:40:48.327 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:40:48.329 | INFO     | utils.auth:authenticate_user:42 - User ID: 2
+2024-02-29 19:40:48.331 | INFO     | utils.auth:authenticate_user:43 - Username: test
+2024-02-29 19:40:48.332 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$ed7D/M0gjo0jpKd88yxWjuvxtOPlCc.yNwOd7r3LmffyOfrAOPuZu
+2024-02-29 19:40:48.334 | INFO     | utils.auth:authenticate_user:45 - passwordddd: test
+2024-02-29 19:40:48.344 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:40:48.346 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer test.
+2024-02-29 19:40:48.354 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 0.04546s
+2024-02-29 19:41:08.295 | INFO     | app:generate_token:36 - route token
+2024-02-29 19:41:08.298 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:41:08.304 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:41:08.307 | INFO     | utils.auth:authenticate_user:42 - User ID: 2
+2024-02-29 19:41:08.309 | INFO     | utils.auth:authenticate_user:43 - Username: test
+2024-02-29 19:41:08.312 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$ed7D/M0gjo0jpKd88yxWjuvxtOPlCc.yNwOd7r3LmffyOfrAOPuZu
+2024-02-29 19:41:08.315 | INFO     | utils.auth:authenticate_user:45 - passwordddd: test
+2024-02-29 19:41:08.318 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:41:08.322 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer test.
+2024-02-29 19:41:08.329 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 0.03965s
+2024-02-29 19:41:36.711 | INFO     | app:user_login:80 - route login
+2024-02-29 19:41:36.719 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01525s
+2024-02-29 19:41:55.857 | INFO     | app:read_user_profile:93 - route profile.
+2024-02-29 19:41:55.865 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /profile | Execution time: 0.01529s
+2024-02-29 19:43:00.881 | INFO     | app:user_login:80 - route login
+2024-02-29 19:43:00.889 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01458s
+2024-02-29 19:43:20.002 | INFO     | app:generate_token:36 - route token
+2024-02-29 19:43:20.005 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:43:20.012 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:43:20.015 | INFO     | utils.auth:authenticate_user:42 - User ID: 5
+2024-02-29 19:43:20.018 | INFO     | utils.auth:authenticate_user:43 - Username: mohamad
+2024-02-29 19:43:20.021 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$wX7WjuPL38pj3ZQ8yfYPTu76YCIgqCX04ZD4NC8MuQ4Km52qiaMWO
+2024-02-29 19:43:20.024 | INFO     | utils.auth:authenticate_user:45 - passwordddd: mohamad
+2024-02-29 19:43:20.026 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:43:20.029 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer mohamad.
+2024-02-29 19:43:20.037 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 0.03912s
+2024-02-29 19:43:52.206 | INFO     | app:user_login:80 - route login
+2024-02-29 19:43:52.215 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01598s
+2024-02-29 19:44:04.461 | INFO     | app:read_user_profile:93 - route profile.
+2024-02-29 19:44:04.468 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /profile | Execution time: 0.01380s
+2024-02-29 19:44:19.431 | INFO     | app:generate_token:36 - route token
+2024-02-29 19:44:19.435 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:44:19.441 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:44:19.444 | INFO     | utils.auth:authenticate_user:42 - User ID: 5
+2024-02-29 19:44:19.447 | INFO     | utils.auth:authenticate_user:43 - Username: mohamad
+2024-02-29 19:44:19.449 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$wX7WjuPL38pj3ZQ8yfYPTu76YCIgqCX04ZD4NC8MuQ4Km52qiaMWO
+2024-02-29 19:44:19.452 | INFO     | utils.auth:authenticate_user:45 - passwordddd: mohamad
+2024-02-29 19:44:19.454 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:44:19.458 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer mohamad.
+2024-02-29 19:44:19.466 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 0.04228s
+2024-02-29 19:44:41.099 | INFO     | app:user_login:80 - route login
+2024-02-29 19:44:41.107 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01508s
+2024-02-29 19:45:24.892 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /docs | Execution time: 0.00418s
+2024-02-29 19:45:26.183 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /openapi.json | Execution time: 0.00512s
+2024-02-29 19:46:04.928 | INFO     | app:generate_token:36 - route token
+2024-02-29 19:46:04.930 | INFO     | utils.auth:token_generator:56 - Token wird generiert für Benutzer '{username}'.
+2024-02-29 19:46:04.935 | INFO     | utils.auth:authenticate_user:41 - daaaaaaaaaaaaaaaa2
+2024-02-29 19:46:04.938 | INFO     | utils.auth:authenticate_user:42 - User ID: 5
+2024-02-29 19:46:04.941 | INFO     | utils.auth:authenticate_user:43 - Username: mohamad
+2024-02-29 19:46:04.943 | INFO     | utils.auth:authenticate_user:44 - Password: $2b$12$wX7WjuPL38pj3ZQ8yfYPTu76YCIgqCX04ZD4NC8MuQ4Km52qiaMWO
+2024-02-29 19:46:04.945 | INFO     | utils.auth:authenticate_user:45 - passwordddd: mohamad
+2024-02-29 19:46:04.947 | INFO     | utils.auth:authenticate_user:48 - erfolgreich
+2024-02-29 19:46:04.949 | INFO     | utils.auth:token_generator:72 - Erfolgreiche Authentifizierung für Benutzer mohamad.
+2024-02-29 19:46:04.954 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 0.03085s
+2024-02-29 19:46:09.847 | INFO     | app:user_login:80 - route login
+2024-02-29 19:46:09.853 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01250s
+2024-02-29 19:46:17.371 | INFO     | app:read_user_profile:93 - route profile.
+2024-02-29 19:46:17.379 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /profile | Execution time: 0.01302s
+2024-02-29 19:48:21.659 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:48:41.342 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:48:58.532 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:50:00.402 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:50:16.692 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:51:08.659 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:51:27.110 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 19:51:35.244 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /docs | Execution time: 0.00794s
+2024-02-29 19:51:36.490 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /openapi.json | Execution time: 0.04919s
+2024-02-29 19:51:44.308 | INFO     | app:generate_token:36 - route token
+2024-02-29 19:51:44.311 | INFO     | utils.auth:token_generator:46 - Token is generated for users '{username}'.
+2024-02-29 19:51:44.329 | INFO     | utils.auth:authenticate_user:39 - Successful
+2024-02-29 19:51:44.337 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 0.03864s
+2024-02-29 19:51:53.222 | INFO     | app:user_login:80 - route login
+2024-02-29 19:51:53.231 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01766s
+2024-02-29 19:52:00.540 | INFO     | app:read_user_profile:93 - route profile.
+2024-02-29 19:52:00.549 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /profile | Execution time: 0.01522s
+2024-02-29 20:00:48.655 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 20:01:04.684 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /docs | Execution time: 0.00747s
+2024-02-29 20:01:05.866 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /openapi.json | Execution time: 0.06107s
+2024-02-29 20:01:09.183 | INFO     | app:generate_token:36 - route token
+2024-02-29 20:01:09.185 | INFO     | utils.auth:token_generator:46 - Token is generated for users '{username}'.
+2024-02-29 20:01:11.299 | INFO     | utils.auth:authenticate_user:39 - Successful
+2024-02-29 20:01:11.305 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 2.13077s
+2024-02-29 20:01:21.044 | INFO     | app:user_login:80 - route login
+2024-02-29 20:01:21.052 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01401s
+2024-02-29 20:02:53.592 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 20:03:06.595 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /docs | Execution time: 0.00791s
+2024-02-29 20:03:07.730 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /openapi.json | Execution time: 0.05101s
+2024-02-29 20:03:11.926 | INFO     | app:generate_token:36 - route token
+2024-02-29 20:03:11.929 | INFO     | utils.auth:token_generator:46 - Token is generated for users '{username}'.
+2024-02-29 20:03:14.066 | INFO     | utils.auth:authenticate_user:39 - Successful
+2024-02-29 20:03:14.075 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /token | Execution time: 2.15650s
+2024-02-29 20:03:21.060 | INFO     | app:user_login:80 - route login
+2024-02-29 20:03:21.067 | INFO     | middleware.request_logger:__call__:21 - Request received: POST /login | Execution time: 0.01136s
+2024-02-29 20:04:44.148 | INFO     | app:<module>:32 - This log message uses the configured logger.
+2024-02-29 20:04:47.351 | INFO     | app:read_user_profile:93 - route profile.
+2024-02-29 20:04:47.361 | INFO     | middleware.request_logger:__call__:21 - Request received: GET /profile | Execution time: 0.01538s
