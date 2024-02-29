@@ -15,4 +15,3 @@ class TestAuthentication:
         assert response.status_code == 200
         assert "access_token" in response.json()
         assert "token_type" in response.json() and response.json()["token_type"] == "bearer"
-        # Füge weitere Überprüfungen für den erwarteten Inhalt der Antwort hinzu

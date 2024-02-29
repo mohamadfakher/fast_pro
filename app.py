@@ -12,7 +12,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 
 #middleware
-from middleware.middleware import AuthenticationMiddleware
+from middleware.middleware import AuthMiddleware
 from middleware.request_logger import RequestLoggerMiddleware
 
 app = FastAPI()
@@ -25,7 +25,7 @@ protected_endpoints = {"/profile", "/login"}
 
 # Middleware registrieren
 app.add_middleware(RequestLoggerMiddleware)
-app.middleware("http")(AuthenticationMiddleware(app, protected_endpoints))
+app.middleware("http")(AuthMiddleware(app, protected_endpoints))
 
 # Configure the App-Logger
 app_logger = AppLogger()
@@ -104,10 +104,6 @@ async def signup(user: user_pydantic):
         )
     return db_user
 
-@app.get("/")
-def index():
-    app_logger.get_logger().info("route index.")
-    return {"Message": "Hello World!"}
 
 register_tortoise(
     app,

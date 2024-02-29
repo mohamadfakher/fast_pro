@@ -3,7 +3,7 @@ from fastapi import HTTPException, Request
 from utils.auth import very_token
 from typing import Callable
 
-class AuthenticationMiddleware:
+class AuthMiddleware:
     def __init__(self, app, protected_endpoints):
         self.app = app
         self.protected_endpoints = set(protected_endpoints)
@@ -12,7 +12,7 @@ class AuthenticationMiddleware:
         path = request.url.path
 
         if path in self.protected_endpoints:
-            token = request.headers.get("Authorization")
+            token = request.headers.get("Authorization...")
             if not token or not token.startswith("Bearer "):
                 raise HTTPException(
                     status_code=401,
