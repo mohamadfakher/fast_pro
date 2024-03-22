@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Style für das zentrierte Fenster */
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Style für das Formular */
+        form {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            align-items: center;
+        }
+
+        /* Style für Fehlermeldungen */
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="centered">
+    <h2>Login</h2>
+
+    <form id="login-form">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+
+    <div>
+        <p>Noch keinen Account? <a href="/signup">Hier registrieren</a>.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        fetch("/login", {
+            method: "POST",
+            body: new FormData(document.getElementById("login-form")),
+        })
+        .then(response => {
+            if (response.ok) {
+                window.location.href = "/profile";
+            } else {
+                console.error("Login fehlgeschlagen:", response);
+                alert("Anmeldung fehlgeschlagen. Bitte versuchen Sie es später erneut.");
+            }
+        })
+        .catch(error => {
+            console.error("Fehler während der Anmeldung:", error);
+            alert("Fehler während der Anmeldung. Bitte versuchen Sie es später erneut.");
+        });
+    });
+</script>
+
+</body>
+</html>
